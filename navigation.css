@@ -1,0 +1,4 @@
+.navigation{color:red ;background-color:white ;}
+.navigation li{list-style-type:none; ;}
+.navigation li a{text-decoration:none ;}
+.navigation li a :hover{color: gold;}
