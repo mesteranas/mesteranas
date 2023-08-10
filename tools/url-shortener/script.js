@@ -8,9 +8,10 @@ function flink(){
         })
             .then(htmlCode => {
                 document.getElementById("re").value=htmlCode
+                document.getElementById("re").focus()
             })
     } catch(error){
         document.getElementById("re").value="can't short this link"
+        document.getElementById("re").focus()
     }
-    document.getElementById("re").focus()
 }
