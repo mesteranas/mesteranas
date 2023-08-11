@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  textarea {
+    width: 100%;
+    height: 300px;
+  }
+</style>
+<script>
+  // JavaScript functions for notepad functionality
+  function openFile() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.txt'; // Only accept text files
+    input.onchange = function(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const content = e.target.result;
+        document.getElementById('editor').value = content;
+      };
+      reader.readAsText(file);
+    };
+    input.click();
+  }
+
+  function saveFile() {
+    const content = document.getElementById('editor').value;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'notepad.txt';
+    link.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function goToLine() {
+    const lineNumber = prompt('Go to line:');
+    if (lineNumber) {
+      const editor = document.getElementById('editor');
+      const lines = editor.value.split('\n');
+      if (lineNumber >= 1 && lineNumber <= lines.length) {
+        editor.focus();
+        const position = lines.slice(0, lineNumber - 1).join('\n').length;
+        editor.setSelectionRange(position, position);
+      } else {
+        alert('Invalid line number.');
+      }
+    }
+  }
+
+  function replaceText() {
+    const findText = prompt('Find:');
+    if (findText !== null) {
+      const replaceText = prompt('Replace with:');
+      if (replaceText !== null) {
+        const editor = document.getElementById('editor');
+        const content = editor.value;
+        const updatedContent = content.split(findText).join(replaceText);
+        editor.value = updatedContent;
+      }
+    }
+  }
+</script>
+</head>
+<body>
+
+<button onclick="openFile()">Open</button>
+<button onclick="saveFile()">Save</button>
+<button onclick="goToLine()">Go to Line</button>
+<button onclick="replaceText()">Replace</button>
+<br>
+<textarea id="editor"></textarea>
+
+</body>
+</html>
