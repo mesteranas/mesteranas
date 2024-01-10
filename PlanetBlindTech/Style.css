@@ -1,0 +1,140 @@
+body {
+	background: #151c4d;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+p, h1, h2, h3 {
+	direction: rtl;
+}
+ul {
+	list-style-type: none;
+}
+li a {
+	text-decoration: none;
+	color: white;
+	translation: font-size 2;
+}
+li a:active {
+	font-size: 90%;
+}
+nav {
+	font-size: 3vw;
+	width: 100vw;
+	background: #3e3f45;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	flex-shrink: 1;
+	translation: font-size 2;
+}
+nav a:active {
+	font-size: 1vw;
+}
+header, h1, p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	flex-shrink: 1;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	direction: rtl;
+}
+h3 {
+	text-align: center;
+}
+.icons {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: 1vw;
+}
+.icons .icon a {
+	text-decoration: none;
+}
+.icon img {
+	width: 10vw;
+}
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #151c4d;
+}
+input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 4vw;
+	margin-bottom: 4vw;
+	padding: 2%;
+	width: 85vw;
+	outline: none;
+	background: #0e3bad;
+	color: white;
+	border: black 2px solid;
+	direction: rtl;
+}
+textarea {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 4vw;
+	margin-bottom: 4vw;
+	padding: 2%;
+	width: 85vw;
+	outline: none;
+	background: #0e3bad;
+	color: white;
+	border: black 2px solid;
+	direction: rtl;
+}
+#topic-title {
+	height: 25vw;
+}
+#topic-text {
+	height: 60vw;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+button {
+	background: #126dff;
+	width: 75vw;
+	transition: background 0.2s ease-in;
+	color: white;
+	border: black 2px solid;
+}
+button:active {
+	background: #1526bd;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 55vw;
+}
+.about-us {
+	text-align: right;
+}
