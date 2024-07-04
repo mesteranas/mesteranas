@@ -35,7 +35,7 @@
 
 ### 📞 Contact Information
 - **Telegram**: [t.me/mesteranasm](https://t.me/mesteranasm)
-- **X (formerly Twitter)**: [x.com/mesteranas](https://x.com/mesteranas)
+- **X (formerly Twitter)**: [x.com/mesteranas](https://x.com/mesteranasm)
 - **Website**: [mesteranasm.pythonanywhere.com](https://mesteranasm.pythonanywhere.com/)
 - **LinkedIn**: [linkedin.com/in/mesteranas-mohamed-284126287](https://www.linkedin.com/in/mesteranas-mohamed-284126287/)
 
