@@ -34,7 +34,7 @@
 - Created numerous projects, continuously learning and developing my skills. Currently not employed in any company.
 
 ### 📞 Contact Information
-- **Telegram**: [t.me/mesteranas](https://t.me/mesteranas)
+- **Telegram**: [t.me/mesteranasm](https://t.me/mesteranasm)
 - **X (formerly Twitter)**: [x.com/mesteranas](https://x.com/mesteranas)
 - **Website**: [mesteranasm.pythonanywhere.com](https://mesteranasm.pythonanywhere.com/)
 - **LinkedIn**: [linkedin.com/in/mesteranas-mohamed-284126287](https://www.linkedin.com/in/mesteranas-mohamed-284126287/)
